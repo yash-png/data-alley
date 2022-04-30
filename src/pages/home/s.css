@@ -1,0 +1,231 @@
+#container-rotate {
+  --n: 12;
+  --d: 12s;
+
+  width: 60rem;
+  height: 35rem;
+  margin: -22rem auto;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-rows: 50px;
+  place-content: center;
+  border-radius: 50%;
+  z-index: -1;
+}
+.item {
+  grid-area: 1/1;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 6rem;
+  z-index: -10;
+  animation: spin var(--d) linear infinite;
+  transform: rotate(0) translate(400px, 500px) rotate(0);
+}
+@keyframes spin {
+  100% {
+    transform: rotate(1turn) translate(400px, 500px) rotate(-1turn);
+  }
+}
+
+.item:nth-child(1) {
+  animation-delay: calc(-0 * var(--d) / var(--n));
+}
+.item:nth-child(2) {
+  animation-delay: calc(-1 * var(--d) / var(--n));
+}
+.item:nth-child(3) {
+  animation-delay: calc(-2 * var(--d) / var(--n));
+}
+.item:nth-child(4) {
+  animation-delay: calc(-3 * var(--d) / var(--n));
+}
+.item:nth-child(5) {
+  animation-delay: calc(-4 * var(--d) / var(--n));
+}
+.item:nth-child(6) {
+  animation-delay: calc(-5 * var(--d) / var(--n));
+}
+.item:nth-child(7) {
+  animation-delay: calc(-6 * var(--d) / var(--n));
+}
+.item:nth-child(8) {
+  animation-delay: calc(-7 * var(--d) / var(--n));
+}
+.item:nth-child(9) {
+  animation-delay: calc(-8 * var(--d) / var(--n));
+}
+.item:nth-child(10) {
+  animation-delay: calc(-9 * var(--d) / var(--n));
+}
+.item:nth-child(11) {
+  animation-delay: calc(-10 * var(--d) / var(--n));
+}
+.item:nth-child(12) {
+  animation-delay: calc(-11 * var(--d) / var(--n));
+}
+
+.rotate-circle-1 {
+  clip-path: circle(50% at 50% 100%);
+
+  background-color: #87ceeb;
+  height: 70rem;
+  width: 80vw;
+  z-index: -5;
+  margin-left: 2rem;
+  margin-top: -6rem;
+}
+.rotate-circle-2 {
+  clip-path: circle(50% at 50% 100%);
+
+  background-color: #87cefa;
+  height: 60rem;
+  width: 70vw;
+  z-index: -5;
+  margin-left: 7rem;
+  margin-top: -60rem;
+}
+.rotate-circle-3 {
+  clip-path: circle(50% at 50% 100%);
+  position: absolute;
+  background-color: #00bfff;
+  height: 50rem;
+  width: 60vw;
+  z-index: 25;
+  left: 50%;
+  transform: translateX(-50%);
+  /* margin-left: 12rem; */
+  margin-top: -50rem;
+}
+.rotate-circle-4 {
+  clip-path: circle(50% at 50% 100%);
+  position: absolute;
+  background-color: #6699cc;
+  height: 40rem;
+  width: 45vw;
+  z-index: 25;
+  left: 50%;
+  transform: translateX(-50%);
+  /* margin-left: 20rem; */
+  margin-top: -41rem;
+}
+
+@media (max-width: 1000px) {
+  .rotate-circle-1 {
+    margin-left: -1rem;
+  }
+  .rotate-circle-2 {
+    margin-left: 1rem;
+  }
+  .rotate-circle-4 {
+    width: 50vw;
+  }
+  .item {
+    transform: rotate(0) translate(300px, 400px) rotate(0);
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn) translate(300px, 400px) rotate(-1turn);
+    }
+  }
+  #container-rotate {
+    margin: -20rem -7rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .rotate-circle-1 {
+    margin-left: -1rem;
+  }
+  .rotate-circle-2 {
+    margin-left: 3rem;
+  }
+  .rotate-circle-4 {
+    width: 50vw;
+  }
+  .item {
+    transform: rotate(0) translate(300px, 400px) rotate(0);
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn) translate(300px, 400px) rotate(-1turn);
+    }
+  }
+  #container-rotate {
+    margin: -20rem -7rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 880px) {
+  .left-div {
+    display: none !important;
+  }
+  .rotate-circle-1 {
+    margin-left: -2rem;
+    margin-top: -10rem;
+    width: 100vw;
+  }
+  .rotate-circle-2 {
+    margin-left: -3rem;
+    width: 100vw;
+  }
+  .rotate-circle-3 {
+    margin-left: 0.5rem;
+    margin-top: -48rem;
+    width: 100vw;
+  }
+
+  .rotate-circle-4 {
+    width: 100vw;
+    margin-left: 0.5rem;
+    margin-top: -36rem;
+  }
+  .item {
+    transform: rotate(0) translate(200px, 400px) rotate(0);
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn) translate(200px, 400px) rotate(-1turn);
+    }
+  }
+  #container-rotate {
+    margin: -25rem -14rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .rotate-circle-1 {
+    margin-left: -2rem;
+    margin-top: -20rem;
+    width: 100vw;
+  }
+  .rotate-circle-2 {
+    margin-left: -3rem;
+    width: 100vw;
+  }
+  .rotate-circle-3 {
+    margin-left: 0.5rem;
+    margin-top: -48rem;
+    width: 100vw;
+  }
+
+  .rotate-circle-4 {
+    width: 100vw;
+    margin-left: 0.5rem;
+    margin-top: -39rem;
+  }
+  .left-div {
+    display: none !important;
+  }
+  .item {
+    transform: rotate(0) translate(200px, 400px) rotate(0);
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn) translate(200px, 400px) rotate(-1turn);
+    }
+  }
+  #container-rotate {
+    margin: -25rem -16rem;
+  }
+}
