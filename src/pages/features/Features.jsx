@@ -4,7 +4,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaLaptopCode } from "react-icons/fa";
 const Features = () => {
   return (
-    <div className="mt-5" style={{ width: "100vw" }} id="features">
+    <div
+      className="mt-5"
+      style={{ width: "100vw", minHeight: "100vh" }}
+      id="features"
+    >
       <Container fluid className="d-flex justify-content-center ">
         <div
           className="container d-flex flex-column justify-content-center align-items-center"
