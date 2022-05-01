@@ -229,3 +229,22 @@
     margin: -25rem -16rem;
   }
 }
+@media (min-width: 1584px) {
+  .rotate-circle-1 {
+    margin-left: -2rem;
+  }
+  .rotate-circle-2 {
+    margin-left: 4rem;
+  }
+  .item {
+    transform: rotate(0) translate(300px, 400px) rotate(0);
+  }
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn) translate(300px, 400px) rotate(-1turn);
+    }
+  }
+  #container-rotate {
+    margin: -20rem -7rem;
+  }
+}

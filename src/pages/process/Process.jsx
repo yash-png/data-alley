@@ -13,7 +13,7 @@ import {
 
 const Process = () => {
   return (
-    <div id="process" style={{ overflowX: "hidden" }} className="mt-5">
+    <div id="process" style={{ overflow: "hidden" }} className="mt-5">
       <div
         className="container-fluid"
         style={{
