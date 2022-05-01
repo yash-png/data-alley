@@ -34,11 +34,11 @@
     font-size: 0.8rem;
   }
 }
-@media (max-width: 617px) {
+@media (min-width: 300px) and (max-width: 420px) {
   .process-title {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
-  .process-description {
-    font-size: 0.6rem;
+  .container-text {
+    max-width: 70%;
   }
 }

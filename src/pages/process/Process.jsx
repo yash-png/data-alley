@@ -13,9 +13,13 @@ import {
 
 const Process = () => {
   return (
+<<<<<<< HEAD
     <div id="process" style={{ overflow: "hidden" }} className="mt-5">
+=======
+    <div id="process" style={{ overflow: "hidden" }} className="mt-5 pt-5">
+>>>>>>> 8d6f0270c73707b7bfe8c05987f12ed26f20f69e
       <div
-        className="container-fluid"
+        className="container-fluid mt-5"
         style={{
           borderTop: "1px solid black",
           borderRadius: "50% 50% 0 0",
@@ -23,12 +27,8 @@ const Process = () => {
           boxShadow: "inset 10px 10px 27px 9px rgba(0,0,0,0.22);",
         }}
       >
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <div className=" text-center mt-5">
-          <p className="process-title">The 3-step process</p>
+        <div className="container container-text text-center mt-5">
+          <p className="process-title pt-5">The 3-step process</p>
           <p className="process-description">
             The business cerrent account that is your accounting software.
           </p>
@@ -41,16 +41,18 @@ const Process = () => {
         <br></br>
         <div className="mt-5">
           <div className="row">
-            <div className="col-md-12 p-0">
-              <div className="text-center">
-                <img
-                  src="images/1desktop.png"
-                  alt="phone"
-                  className="img-fluid"
-                />
+            <div className="col-md-3 col-sm-6 col-12 p-0 ">
+              {/* another instance of image */}
+              <div className=" col-12 d-md-none ">
+                <div className="d-flex align-items-center justify-content-center h-100">
+                  <img
+                    src="images/1desktop.png"
+                    alt="phone"
+                    style={{ maxHeight: "10rem" }}
+                    className="img-fluid m-0 p-0"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="col-md-6 col-sm-6 p-0 ">
               <LeftCards
                 number={<FaPenNib />}
                 header="Market analysis"
@@ -68,7 +70,18 @@ const Process = () => {
               />
             </div>
 
-            <div className="col-md-6 col-sm-6  p-0">
+            <div className="col-md-6 p-0 col-12 d-none d-md-flex  align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center h-100">
+                <img
+                  src="images/1desktop.png"
+                  alt="phone"
+                  style={{ maxHeight: "20rem" }}
+                  className="img-fluid "
+                />
+              </div>
+            </div>
+
+            <div className="col-md-3 col-sm-6 col-12  p-0">
               <RightCards
                 number={<TiGlobeOutline />}
                 header="Optimal choice"

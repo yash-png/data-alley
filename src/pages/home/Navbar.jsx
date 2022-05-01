@@ -29,7 +29,12 @@ const Navbar = () => {
           // style={{ width: "fit-content" }}
         >
           <div>
-            <img src="images/mainlogo.png" className="img-fluid " alt="" />
+            <img
+              src="images/mainlogo.png"
+              className="img-fluid nav-logo"
+              style={{ maxHeight: "6rem" }}
+              alt=""
+            />
           </div>
         </div>
         {/* second completed */}

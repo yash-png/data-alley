@@ -21,12 +21,13 @@ const Home = () => {
   return (
     <div style={{ overflow: "hidden" }}>
       <Navbar />
-      <div className="sticky-container border border-dark px-4 py-2">
+      <div className="sticky-container border border-dark px-4 py-1">
         sign up
       </div>
       <div className="container-fluid  text-center"></div>
       <div
         className="container-fluid home-shadow"
+        // to change background color use class home-shadow (home.css)
         style={{
           borderBottom: "0.2px solid #fff",
           borderRadius: "0% 0% 44% 44% / 10% 10% 59% 59%  ",
@@ -58,58 +59,86 @@ const Home = () => {
                   maxWidth: "500px",
                   left: "50%",
                   transform: "translate(-50%, 0)",
-                  marginTop: "15rem",
                 }}
-                className="  pt-5 img-fluid home-img"
+                className="pt-5 img-fluid home-img"
                 alt="logo"
               />
             </Parallax>
 
             {/* img div  */}
-            <div className="rotate-circle-1"></div>
-            <div className="rotate-circle-2"></div>
-            <div className="rotate-circle-3"></div>
-            <div className="rotate-circle-4"></div>
+            <div
+              className="d-flex flex-column align-items-center justify-content-center"
+              style={{ position: "relative" }}
+            >
+              <div id="container-rotate">
+                <div class="item ">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+                <div class="item">
+                  <AiFillGooglePlusSquare />
+                </div>
+              </div>
+              <div className="rotate-circle-1"></div>
+              <div className="rotate-circle-2"></div>
+              <div className="rotate-circle-3"></div>
+              <div className="rotate-circle-4"></div>
+            </div>
 
             {/* rotate */}
-            <div id="container-rotate">
-              <div class="item ">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-              <div class="item">
-                <AiFillGooglePlusSquare />
-              </div>
-            </div>
           </div>
         </ParallaxProvider>
       </div>
